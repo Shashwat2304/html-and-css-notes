@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeb</title>
+</head>
+
+<!-- These are heading tags -->
+<h1>Shashwat</h1>
+<h2>Shashwat</h2>
+<h3>Shashwat</h3>
+<h4>Shashwat</h4>
+<h5>Shashwat</h5>
+<h6>Shashwat</h6>
+
+<!-- These are paragraph tags -->
+<p>first Lorem ipsum dolor sit amet.</p>
+<p>second</p>
+<p>third</p>
+<p>fourth</p>
+
+<!-- Must use strong insted of bold -->
+<strong>This is strong/bold</strong>
+
+<!-- This is a new line -->
+<br><br>
+
+<!-- em is to make italic letter -->
+<em>This is italic</em>
+
+<!-- This puts a black line -->
+<hr>
+
+<!-- <img> puts image to webpage -->
+<!-- We can put link in image so when click it will open  -->
+<a href="/Page.html" target="_blank"><img
+        src="https://i.pinimg.com/originals/54/33/c5/5433c5ff811cc47730523878a0792ef1.jpg" alt="Error 191"></a>
+
+<!-- Target atribute target="_blank" is helpful for opening link in new tab -->
+
+<!-- This allows to put link in img and words --> <br>
+<a href="https://www.google.com" target="_blank">Google.com</a><br>
+<a href="https://www.youtube.com" target="_blank">youtube.com</a><br>
+<a href="https://www.facebook.com" target="_blank">facebook.com</a><br>
+<a href="https://www.linkedin.com" target="_blank">linkedin.com</a><br>
+<!-- add a new internal page-->
+<a href="/Page.html" target="_blank">Page</a>
+
+<!-- Lists -->
+
+<!-- Unordered List -->
+<ul>
+    <li>This is First item of this Unordered List</li>
+    <li>This is Second item of this Unordered List</li>
+    <li>This is Third item of this Unordered List</li>
+</ul>
+
+<!-- Types of Unordered List circle, disc, square -->
+<ul type="square">
+    <li>This unordered list starts with square</li>
+    <li>This unordered list starts with square</li>
+    <li>This unordered list starts with square</li>
+</ul>
+
+<!-- Ordered List -->
+<ol>
+    <li>This is First item of this ordered List</li>
+    <li>This is First item of this ordered List</li>
+    <li>This is First item of this ordered List</li>
+</ol>
+
+<!-- Types of ordered List 1, A, a, I, i -->
+<ol type="i">
+    <li>This ordered list starts with small i</li>
+    <li>This ordered list starts with small i</li>
+    <li>This ordered list starts with small i</li>
+</ol>
+
+<!-- Table -->
+<H3>Html Table</H3>
+<table>
+
+    <!-- Table head -->
+    <thead>
+
+        <!-- Table row -->
+        <tr>
+
+            <!-- Table Headings -->
+            <th>Name</th>
+            <th>Class</th>
+            <th>Roll no.</th>
+        </tr>
+    </thead>
+
+
+    <!-- Table Body -->
+    <tbody>
+
+        <!-- Table rows -->
+        <tr>
+
+            <!-- Table data -->
+            <td>Shashwat</td>
+            <td>9D</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>Harry</td>
+            <td>9A</td>
+            <td>09</td>
+        </tr>
+        <tr>
+            <td>Rohan</td>
+            <td>9E</td>
+            <td>32</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Html Forms</h2>
+<!-- Forms -->
+
+<!-- backend.php is an imaginary file just an example -->
+<form action="backend.php">
+    <!-- use div to make it come in next line -->
+    <div>
+        Name: <input type="text" name="myname">
+    </div>
+    <!-- br tag is not recomended better use css to design -->
+    <br>
+    <div>
+        Role: <input type="text" name="myrole">
+    </div>
+    <br>
+    <div>
+        Email: <input type="email" name="myemail">
+    </div>
+    <br>
+
+
+
+    <!-- Types of input -->
+    <div>
+        <!-- Button -->
+        <a href="https://google.com" target="_blank"><input type="button" value="Google"></a>
+    </div>
+    <br>
+    <label for="check me:">Check Me:</label>
+    <div>
+        <!-- checkbox -->
+
+        <input type="checkbox" name="check me:">
+    </div>
+    <br>
+    <div>
+        <!-- color -->
+        Make me colorful: <input type="color" name="Make me colorful" id="">
+    </div>
+    <br>
+    <div>
+        <!-- Date -->
+        Pick a Date: <input type="date" name="Date" id="">
+    </div>
+    <br>
+    <div>
+
+        <!-- Radio Button -->
+        Gender: Male<input type="radio" name="radiobutton" id=""> female<input type="radio" name="radiobutton" id="">
+    </div>
+    <br>
+    <div>
+        write about yourself: <textarea name=""></textarea>
+    </div>
+    <br>
+    <div>
+        Select The car You like: <select name="selectbox">
+            <option value="None" selected>None</option>
+            <option value="bmw">BMW</option>
+            <option value="Swift">Swift</option>
+            <option value="Mercedes">Mercedes</option>
+        </select>
+    </div>
+    <br><br>
+    <div>
+        <!-- for submitting form -->
+        <input type="submit" value="Submit details">
+    </div>
+    <!-- For reseting form -->
+    <div>
+        <input type="reset" value="reset now">
+    </div>
+</form>
+<!-- Note:There are too many other input methord to try so try them by making projects -->
+
+
+<!-- Inline And Block Elememts -->
+<!-- Block Element -->
+<!-- paragrapgh is a block element it takes all the space of a line -->
+<!-- for example if i type -->
+<p>This is a paragraph</p>
+<p>Paragraph is a block element it takes all the space of a line</p>
+<!-- Now if we run this code we will see that "This is a paragrapgh" will come in one line and "Paragraph is a block element it takes all the space of a line" will come in next line -->
+
+<!-- Inline Element -->
+<!-- Now there are also some element which are opposite of block element they share their line and do not take whole line -->
+<!-- for example if i type -->
+<span>This is a span</span>
+<span>This is also a span</span>
+<!-- so now "This is a span" will come in a line and "This is also a span" will come in the same line -->
+
+<!-- Ids and Classes in HTML -->
+<H3>Ids and Classes</H3>
+<div id="mainbox" class="mainBox">
+    Hello World
+</div>
+
+<h3>Semantic Elememts</h3>
+
+
+</body>
+
+</html>
